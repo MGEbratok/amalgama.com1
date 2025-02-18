@@ -1,0 +1,62 @@
+.change-theme {
+    display: block;
+    position: fixed;
+}
+
+.change-theme-but {
+    text-align: center;
+    text-decoration: none;
+    font-size: 12px;
+    color: white;
+    padding: 10px 50px 10px 50px;
+    border-radius: 20px;
+    margin-top: 460px;
+    margin-left: 1160px;
+    text-align: center;
+    background-image: linear-gradient(to right,rgb(126, 87, 14),black );
+    transition: opasity .4s;
+    cursor: pointer;
+}
+
+.change-theme-but:hover {
+    opacity: 0.8;
+}
+
+.day-icon {
+    width: 18px;
+    height: 18px;
+    opacity: 1;
+}
+
+.night-icon {
+    width: 18px;
+    height: 18px;
+    opacity: 0;
+   
+}
+
+body {
+    transition: .4s, linear-gradient(to bottom, black, gray) .4s;
+}
+
+
+body.night-theme {
+    background-image: linear-gradient(to bottom, black, gray);
+    
+}
+
+
+body.night-theme h1 {
+    color: black;
+    transition: .4s, color .4s;
+}
+
+body.night-theme .night-icon {
+    opacity: 1;
+    transition: opasity .2s;
+}
+
+body.night-theme .day-icon {
+    opacity: 0;
+    transition: opasity .2s;
+}

@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="ru">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Amalgama.com</title>
+        <link rel="stylesheet" href="index.css">
+        <link rel="stylesheet" href="change-theme.css">
+        <link rel="stylesheet" href="views.py">
+        <script defer src="chane-theme.js"></script>
+        <script src="delete.js"></script>
+    </head>
+    <body class="">
+        <header>
+            <h1>Amalgama</h1>
+        </header>
+        <main>
+            
+            <form >
+                <input type="search" name="text" class="search" placeholder="Кого хотите найти ?">
+            </form>
+            
+
+            <section class="change-theme">
+                <button class="change-theme-but" id="change-theme-but"><img class="day-icon" src="Images/869869.png"><img class="night-icon" src="Images/581601.png">Режим</button><br/>
+            </section>
+
+            <section class="nav">
+                <a class="but" href="">Меню</a><br/>
+                <a class="but" href="">Я</a><br/>
+                <a class="but" href="">Групи</a><br/>
+                <a class="but" href="">Маркет</a><br/>
+            </section>
+
+            <section class="posts">
+            
+                <hr>
+                <section class="post">
+                    <a class="post-author-link" href="/id{{ user.id }}"> 
+                        <section class ="post-author">
+                            <section class="post-authot-img-box">
+                                <img class="post-author-img"srs ="{{user.user_profile.avatar.url}}">
+                            </section>
+                            <section class="post-author-name">
+                                {{post.author.first_name}}
+                            </section>
+                        </section>
+                    </a>
+                    <section class="post_text">
+                        {{post.post_text}}
+                    </section>
+                    <span class="dropdown">
+                        
+                        <img class="dropdown-icon" src="Images/2311524.png">
+                        <button class="delete">Удалить</button><br/>
+                    </span>
+                    <section class="post_img_box">
+                        <img class="post_img" src="{{post.post_image.url}}">
+                    </section>
+                    <section class="like-dislike">
+                        <img class="image" src="Images/3502704.png">
+                        <img class="image" src="Images/3596171.png">
+                        <img class="image" src="Images/2958783.png"><br/>
+                    </section>
+                
+                    
+                
+                    
+        </main>
+    </body>
+</html>

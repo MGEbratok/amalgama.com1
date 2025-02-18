@@ -1,0 +1,22 @@
+<!doctype html>
+<html lang="ru">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Code</title>
+        <link rel="stylesheet" href="index.css">
+        <link rel="stylesheet" href="urls.py">
+    </head>
+    <body>
+        <header>
+            <h1>Ми отправили код подтверждения на вашу єлектронную почту, для подтверждения регестрации введите его ниже</h1<<br/>
+        </header>
+        <form class="code-form">
+            <script src="{% static 'js/code.js'%}"></script>
+            <section>
+                <input id="floatingInput" placeholder="Введите свой код подтверждения"></input><br/>
+                <a href="http://127.0.0.1:5500/index.html">Готово</a>
+            </section>
+        </form>
+    </body>
+</html>

@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="ru">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Balance</title>
+        <link rel="stylesheet" href="index.css">
+        <link rel="stylesheet" href="urls.py">
+    </head>
+    <body>
+        <header>
+            <section class ="user">
+                    <img class="user-img"src ="{{user.user_profile.avatar.url}}">
+                <section class="user-name">
+                    {{post.author.first_name}}
+                </section>
+                <section class="user-describe">
+                    {{post.author.describe}}
+                </section>
+            </section>
+        </header>
+        <nav>
+            <a><b>Пости</b></a>
+            <a href="http://127.0.0.1:5500/Portfolio/index.html"><b>Портфолио</b></a>
+            <a><b>Аналитка</b></a>
+            <a href="http://127.0.0.1:5500/Balance/index.html"><b>Счет</b></a>
+            <a href="http://127.0.0.1:5500/Profile/index.html"><b>Избраное</b></a>
+        </nav>
+        <main>
+            <section class="balans">
+                <h2>Баланс</h2>
+                <img class="balans-img" src="Images/3135706.png"><br/>
+                <p></p>
+            </section><br/>
+                
+
+            <section class="buster">
+                <h2>Бусти</h2>
+                <img class="buster-img" src="Images/3596171.png"><br/>
+                <p></p>
+            </section><br/>
+
+            <button>Пополнить</button>
+
+            <section class="token">
+                <img src="Images/flash.png">
+                <p>Тест.токени</p><br/>
+            </section>
+        </main>
+    </body>
+</html>

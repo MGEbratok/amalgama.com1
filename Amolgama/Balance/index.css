@@ -1,0 +1,158 @@
+body {
+    font-family: sans-serif;
+    background-color: white;
+}
+
+header {
+    width: 1350px;
+    height: 200px;
+    position: relative;
+    background-color: red;
+}
+
+.user {
+    position: relative;
+    display: inline-block;
+    margin: 10px;
+}
+
+
+.user-img {
+    position: relative;
+    display: block;
+    background-color: rgb(218, 207, 207);
+    width: 120px;
+    height: 120px;
+    border: none;
+    border-radius: 60px;
+}
+
+.user-name {
+    position: relative;
+    display: inline-block;
+    background-color: rgb(218, 207, 207);
+    padding: 10px 75px 10px 75px;
+    font-size: 16px;
+    color :red;
+    margin-left: 160px;
+    top: -120px;
+    
+}
+
+.user-describe {
+    position: relative;
+    display: inline-block;
+    background-color: rgb(218, 207, 207);
+    padding: 20px 75px 20px 75px;
+    font-size: 16px;
+    color :red;
+    margin-left: -320px;
+    top: -40px;
+    
+}
+
+main {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 560px;
+    margin-top: 100px;
+}
+
+
+
+nav {
+    border: none;
+    padding: 25px 120px 25px 120px;
+    display: flex;
+    justify-content: space-between;
+}
+
+nav a {
+    border-bottom: 3px solid black;
+    font-size: 24px;
+    color: black;
+    text-decoration: none;
+    display: block;
+}
+
+nav a:hover {
+    opacity: 0.8;
+    font-size: 26px;
+    transition: 0.2s linear;
+}
+
+.balans {
+    display: block;
+    position: relative;
+    margin-left: -540px;
+    margin-top: -80px;
+    padding-top: 20px;
+}
+
+.balans p {
+    margin-top: -30px;
+    border: 1px solid black;
+    padding: 16px 120px 16px 120px;
+}
+
+ button {
+    display: block;
+    position: relative;
+    text-decoration: none;
+    border: none;
+    font-size: 20px;
+    color: white;
+    background-color: blue;
+    padding: 10px 75px 10px 75px;
+    border-radius: 15;
+    border-radius: 10px;
+    margin-top: 12px;
+    text-align: center;
+}
+
+.buster{
+    display: block;
+    position: relative;
+    margin-top: 100px;
+    margin-left: -240px
+}
+
+
+.buster p {
+    margin-top: -30px;
+    border: 1px solid black;
+    padding: 16px 120px 16px 120px;
+}
+
+.token {
+    display: block;
+    position: relative;
+    margin-top: -60px;
+    margin-left: 480px;
+}
+
+.token p {
+    margin-top: -30px;
+    border: 1px solid black;
+    padding: 6px 80px 6px 80px;
+}
+
+.token img {
+    margin-left: -50px;
+    
+}
+
+
+section img {
+    width: 40px;
+    height: 40px;
+}
+
+.balans-img, .buster-img {
+    display: block; 
+    padding-top: 20px; 
+    margin-left: 110px;
+    position: relative;
+    top: 20px;
+}
+

@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="ru">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Profile</title>
+        <link rel="stylesheet" href="index.css">
+        <link rel="stylesheet" href="urls.py">
+    </head>
+    <body>
+        <header>
+            <section class ="user">
+                    <img class="user-img"srs ="{{user.user_profile.avatar.url}}">
+                <section class="user-name">
+                    {{post.author.first_name}}
+                </section>
+                <section class="user-describe">
+                    {{post.author.describe}}
+                </section>
+            </section>
+        </header>
+        <nav>
+            <a><b>Пости</b></a>
+            <a href="http://127.0.0.1:5500/Portfolio/index.html"><b>Портфолио</b></a>
+            <a><b>Аналитка</b></a>
+            <a href="http://127.0.0.1:5500/Balance/index.html"><b>Счет</b></a>
+            <a href="http://127.0.0.1:5500/Profile/index.html"><b>Избраное</b></a>
+        </nav>
+        <main>
+           <section class="ad_project">
+                <img src="Images/plus.png"><br/>
+                <p>Добавить<br/> работи</p>
+           </section>
+        </main>
+    </body>
+</html>

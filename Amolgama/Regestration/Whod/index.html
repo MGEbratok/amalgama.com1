@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="ru">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Regectration</title>
+        <link rel="stylesheet" href="index.css">
+        <link rel="stylesheet" href="urls.py">
+    </head>
+    <body>
+        <header>
+            <h2>Amalgama</h2>
+            <h1>Войдите</h1>
+        </header>
+        <main>
+            <section>
+                <a class="but1" href="http://127.0.0.1:5500/Regestration/index.html">Зарегестрироватьса</a><br/>
+                <form method="post "action= "{% url 'register' %}">
+                    <b>E-mail</b><br/>
+                    <input type="text" name="email" required></input><br/>
+                    <b>Пароль</b><br/>
+                    <input type="password" name="password" required></input><br/>
+                    <b>Имя</b><br/>
+                    <input type="text" name="name" required></input><br/>
+                </form>    
+                <a class="button" href="http://127.0.0.1:5500/Code/index.html">Готово</a><br/>
+            </section>
+        </main>
+    </body>
+</html>
